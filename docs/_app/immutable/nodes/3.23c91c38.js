@@ -1,4 +1,4 @@
-import{S as Z,i as ee,s as te,k as u,q as h,a as R,y as B,l as f,m,r as p,h as r,c as P,z as U,n as d,b as v,J as s,A as W,g as q,d as D,B as M,K as H}from"../chunks/index.28fec676.js";import{C as z}from"../chunks/ContentCard.a35e90ab.js";function ne(w){let e,i,o,t,a,y;return{c(){e=u("a"),i=h(`Method and system for encrypting and decrypting secrets using escrow
+import{S as Z,i as ee,s as te,k as u,q as h,a as R,y as B,l as f,m,r as p,h as r,c as P,z as U,n as d,b as v,J as s,A as W,g as q,d as D,B as M,K as H}from"../chunks/index.abce86bf.js";import{C as z}from"../chunks/ContentCard.f8ea10f4.js";function ne(w){let e,i,o,t,a,y;return{c(){e=u("a"),i=h(`Method and system for encrypting and decrypting secrets using escrow
       agents`),o=h(`
     Suppose you have a very secret password that you can't keep in a password manager
     -- like the password to your password manager. While you could trust one "escrow
