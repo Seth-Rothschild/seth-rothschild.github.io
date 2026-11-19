@@ -1,81 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Seth J. Rothschild - Personal Site</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.css"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.js"
-    ></script>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"
-    ></script>
-    <meta name="viewport" content="width=device-width" />
-    
-		<link href="../_app/immutable/assets/0.52fa1d82.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/3.19943971.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.c908d800.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.abce86bf.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.f7150e39.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.398b6ae3.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.3c8f7d99.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.2b6842f6.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/3.23c91c38.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/ContentCard.f8ea10f4.js">
-  </head>
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patents · Seth J. Rothschild</title>
+  <meta name="description" content="Granted and published patents by Seth J. Rothschild." />
+  <link rel="icon" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
 
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <img class="headshot" src="../headshot.jpg" alt="Seth Rothschild" />
+      <div>
+        <p class="name"><a href="../index.html">Seth J. Rothschild</a></p>
+        <p class="role">
+          Senior Principal Software Engineer<br />Office of the CTO, Dell
+          Technologies
+        </p>
+      </div>
+      <nav class="site-nav" aria-label="Site">
+        <a href="../index.html">Home</a>
+        <a href="../programming/index.html">Programming</a>
+        <a href="../patents/index.html" aria-current="page">Patents</a>
+        <a href="../seth_rothschild_resume.pdf">Resume (PDF)</a>
+      </nav>
+      <div class="contact">
+        <span>gmail: seth.j.rothschild</span>
+        <a href="https://github.com/Seth-Rothschild" target="_blank"
+          rel="noopener noreferrer">github.com/Seth-Rothschild</a>
+      </div>
+    </aside>
 
+    <main>
+      <h1>Patents</h1>
 
-<nav class="primary left center" style="width: 130px; padding-top: 20px"><a href="/"><i>home</i>Home</a>
-    <div class="small-divider"></div>
-    <a href="/programming/"><i>code</i>Programming</a>
-    <div class="small-divider"></div>
-    <a href="/patents/"><i>school</i>Patents</a>
-    <div class="small-divider"></div>
-    <a href="/seth_rothschild_resume.pdf"><i>clinical_notes</i>Resume</a></nav>
+      <section>
+        <div class="section-header">
+          <h2>Summary</h2>
+          <a href="https://patents.google.com/?inventor=Seth+Jacob+Rothschild" target="_blank"
+            rel="noopener noreferrer">Google Patents →</a>
+        </div>
+        <p>
+          As part of my regular work in the Office of the CTO, I created
+          prototypes and submitted patent disclosures to Dell, a subset of which
+          were filed with the US Patent Office. An up-to-date list of my granted
+          and published patents is on Google Patents.
+        </p>
+      </section>
 
+      <section>
+        <h2>Some interesting inventions</h2>
+        <ul class="entries">
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11664988B2/en" target="_blank"
+              rel="noopener noreferrer">Method and system for encrypting and decrypting secrets using
+              escrow agents</a>
+            <div class="meta">
+              US11664988B2 · with Radia Perlman, Alex Robbins
+            </div>
+            <p>
+              Suppose you have a very secret password that you can’t keep in a
+              password manager, like the password to your password manager.
+              While you could trust one “escrow provider” to encrypt and store
+              this secret, it would be hard to prevent this provider from
+              peeking. This patent is an invention of
+              <a href="https://en.wikipedia.org/wiki/Radia_Perlman" target="_blank" rel="noopener noreferrer">Radia
+                Perlman’s</a>
+              that we prototyped, which describes a way to keep this secret in
+              escrow so that a quorum of escrow providers need to grant access in
+              order to reconstruct the secret.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US12182285B2/en" target="_blank"
+              rel="noopener noreferrer">System and method for encrypted storage of constructed data</a>
+            <div class="meta">US12182285B2 · with Michael Thomas Kruzewski</div>
+            <p>
+              Plugging into existing access control systems, particularly at a
+              large company, is hard. The main idea here is to make sharing of
+              applications that use protected data easier, by gating app access
+              behind a challenge that only someone with pre-existing access to
+              the data could answer.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11770412B2/en" target="_blank"
+              rel="noopener noreferrer">Secure password log in on insecure devices</a>
+            <div class="meta">
+              US11770412B2 · with Radia Perlman, Ben Santaus, Orlando Xavier
+              Nieves
+            </div>
+            <p>
+              Since passkeys are not widely adopted, we wondered if it would be
+              possible to create a system that converts “what you have” into
+              traditional username/password authentication. Our prototype did
+              the login on a secure device and transferred the session cookie to
+              the less secure device.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11553159B1/en" target="_blank"
+              rel="noopener noreferrer">Continuous video generation from voice data</a>
+            <div class="meta">US11553159B1 · with Alex Robbins</div>
+            <p>
+              We spend a lot of time on video calls, but not a lot of people like
+              being on video. This invention provides an inexpensive way to be on
+              video without being on video, by taking the audio input and
+              manipulating the lips of an existing video of the user.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US12388824B2/en" target="_blank"
+              rel="noopener noreferrer">System and method to distribute access to shared accounts with a
+              trusted intermediate service manager</a>
+            <div class="meta">US12388824B2 · with Radia Perlman</div>
+            <p>
+              Teams often share one account on a third party service, and the
+              usual way to do that is to pass the password around. The trick here
+              is a deliberate man-in-the-middle: a trusted service inside the
+              company holds the credentials, signs in on everyone’s behalf, and
+              forwards only the parts of the third party UI it chooses to each
+              user. Nobody else ever sees the password, and what each person can
+              do is up to the company rather than the vendor.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US20250343790A1/en" target="_blank"
+              rel="noopener noreferrer">Seamless multi-factor authentication code transfer</a>
+            <div class="meta">
+              US20250343790A1 · with Rana Amr Afifi Mohamed, Shary Beshara
+            </div>
+            <p>
+              Until FIDO is widely adopted, which for many important services it
+              still isn’t, logging in often means reading a code off your phone
+              and typing it into your computer. This invention gives users a way to send
+              that code from one device to the other without a human being reading or typing
+              any numbers. It reduces friction without reducing security and without requiring external services to
+              change their
+              implementations.
+            </p>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US12026139B2/en" target="_blank"
+              rel="noopener noreferrer">Efficient method to find columns of a table which are unique</a>
+            <div class="meta">
+              US12026139B2 · with Brendan Burns Healy, Akshaya Khare, Kranti
+              Uppala
+            </div>
+            <p>
+              Sometimes you need to check many large columns quickly to find out
+              whether a column is likely to be a primary key. The trick in this patent leans on the birthday
+              problem: an extremely reasonable first filter is to check a random
+              sample of the column for repeats. The sample you need grows roughly
+              with the square root of the number of entries in the column, so for 1 million rows checking
+              a few percent of them is enough.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
 
-
-
-
-			
-			<script>
-				{
-					__sveltekit_1hjyeta = {
-						base: new URL("..", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.c908d800.js"),
-						import("../_app/immutable/entry/app.398b6ae3.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 3],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-  </body>
 </html>

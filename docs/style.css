@@ -1,0 +1,289 @@
+:root {
+  --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --text: #1b1f24;
+  --text-soft: #444c56;
+  --muted: #57606a;
+  --accent: #0f5e63;
+  --rule: #e5e7eb;
+  --rule-light: #eef0f2;
+  --background: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 72px 24px 96px;
+  display: flex;
+  gap: 72px;
+  align-items: flex-start;
+}
+
+.sidebar {
+  flex: 0 0 260px;
+}
+
+main {
+  flex: 1;
+  min-width: 0;
+  max-width: 640px;
+}
+
+.headshot {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.name {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.name a {
+  color: var(--text);
+}
+
+.role {
+  margin: 6px 0 24px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--rule);
+  padding-top: 16px;
+  margin-bottom: 24px;
+}
+
+.site-nav a {
+  color: var(--muted);
+  padding: 6px 0;
+}
+
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--rule);
+  padding-top: 16px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+section {
+  margin-bottom: 52px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+h2 {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section-header h2 {
+  margin: 0;
+}
+
+.section-header a {
+  font-size: 14px;
+}
+
+.lead {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+
+.card-title {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.entries {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.entries li {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule-light);
+}
+
+.entries li:last-child {
+  border-bottom: none;
+}
+
+.entries .title {
+  font-weight: 500;
+}
+
+.entries .meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.entries p {
+  margin: 6px 0 0;
+  color: var(--text-soft);
+}
+
+.inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 28px;
+}
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text);
+}
+
+.game img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+
+.game strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.game span {
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+@media (max-width: 800px) {
+  .page {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 32px;
+  }
+
+  .sidebar {
+    flex-basis: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    column-gap: 16px;
+    align-items: center;
+  }
+
+  .headshot {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0;
+  }
+
+  .role {
+    margin-bottom: 0;
+  }
+
+  .site-nav,
+  .contact {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 20px;
+    margin: 16px 0 0;
+  }
+
+  .site-nav a {
+    padding: 8px 0;
+  }
+
+  .contact {
+    padding-top: 12px;
+  }
+}

@@ -1,80 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Seth J. Rothschild - Personal Site</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,300"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.css"
-      rel="stylesheet"
-    />
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/beercss@3.4.13/dist/cdn/beer.min.js"
-    ></script>
-    <script
-      type="module"
-      src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"
-    ></script>
-    <meta name="viewport" content="width=device-width" />
-    
-		<link href="./_app/immutable/assets/0.52fa1d82.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.404d6579.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.c908d800.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.abce86bf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.f7150e39.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.398b6ae3.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.3c8f7d99.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.2b6842f6.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.0008e6d5.js">
-  </head>
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seth J. Rothschild</title>
+  <meta name="description"
+    content="Seth J. Rothschild, Senior Principal Software Engineer in the Dell Technologies Office of the CTO." />
+  <link rel="icon" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
+<body>
+  <div class="page">
+    <aside class="sidebar">
+      <img class="headshot" src="headshot.jpg" alt="Seth Rothschild" />
+      <div>
+        <h1 class="name"><a href="index.html">Seth J. Rothschild</a></h1>
+        <p class="role">
+          Senior Principal Software Engineer<br />Office of the CTO, Dell
+          Technologies
+        </p>
+      </div>
+      <nav class="site-nav" aria-label="Site">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="programming/index.html">Programming</a>
+        <a href="patents/index.html">Patents</a>
+        <a href="seth_rothschild_resume.pdf">Resume (PDF)</a>
+      </nav>
+      <div class="contact">
+        <span>gmail: seth.j.rothschild</span>
+        <a href="https://github.com/Seth-Rothschild" target="_blank"
+          rel="noopener noreferrer">github.com/Seth-Rothschild</a>
+      </div>
+    </aside>
 
+    <main>
+      <section>
+        <h2>Summary</h2>
+        <p class="lead">
+          I turn loosely defined, ambitious ideas into working software.
+        </p>
+        <p>
+          I am a Senior Principal Software Engineer in the Dell Technologies Office of the CTO. My recent focus is
+          agentic AI and how developers
+          should work alongside it, including how to raise the engineering bar
+          with extreme programming.
+        </p>
+        <p>
+          Prior to working at Dell I was a Research Scientist at
+          <a href="https://www.featurelabs.com/open/" target="_blank" rel="noopener noreferrer">Feature Labs</a>, where
+          I worked on the open source project
+          <a href="https://github.com/alteryx/featuretools" target="_blank" rel="noopener noreferrer">Featuretools</a>.
+        </p>
+        <p>
+          Before that I completed a Ph.D. in mathematics in 2017 under
+          <a href="https://math.tufts.edu/people/faculty/george-mcninch" target="_blank"
+            rel="noopener noreferrer">George McNinch</a>
+          at
+          <a href="https://www.tufts.edu" target="_blank" rel="noopener noreferrer">Tufts University</a>, studying
+          unipotent algebraic groups over finite fields of positive
+          characteristic.
+        </p>
+      </section>
 
-<nav class="primary left center" style="width: 130px; padding-top: 20px"><a href="/"><i>home</i>Home</a>
-    <div class="small-divider"></div>
-    <a href="/programming/"><i>code</i>Programming</a>
-    <div class="small-divider"></div>
-    <a href="/patents/"><i>school</i>Patents</a>
-    <div class="small-divider"></div>
-    <a href="/seth_rothschild_resume.pdf"><i>clinical_notes</i>Resume</a></nav>
+      <section>
+        <div class="section-header">
+          <h2>Programming</h2>
+          <a href="programming/index.html">See more →</a>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <a class="card-title" href="https://libaduk.com" target="_blank" rel="noopener noreferrer">libaduk.com</a>
+            <p>
+              A Lichess-style site for studying Go, with puzzles, online play,
+              and in-browser AI play. 150+ players.
+            </p>
+          </div>
+          <div class="card">
+            <span class="card-title">Dell Chat</span>
+            <p>
+              Tech lead on Dell's internal AI platform. 30,000 registered and
+              4,000 daily users.
+            </p>
+          </div>
+          <div class="card">
+            <a class="card-title" href="https://github.com/Seth-Rothschild/template_builder" target="_blank"
+              rel="noopener noreferrer">template_builder</a>
+            <p>Turns markdown into typeset PDFs with Go, pandoc and tectonic, as a CLI or an HTTP build server.</p>
+          </div>
+          <div class="card">
+            <a class="card-title" href="https://github.com/Seth-Rothschild/goban_irl" target="_blank"
+              rel="noopener noreferrer">Goban IRL</a>
+            <p>Track the state of a physical Go board from a webcam with OpenCV.</p>
+          </div>
+        </div>
+      </section>
 
+      <section>
+        <div class="section-header">
+          <h2>Selected Patents</h2>
+          <a href="patents/index.html">See more →</a>
+        </div>
+        <ul class="entries">
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11664988B2/en" target="_blank"
+              rel="noopener noreferrer">Method and system for encrypting and decrypting secrets using
+              escrow agents</a>
+            <div class="meta">US11664988B2 · granted</div>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11770412B2/en" target="_blank"
+              rel="noopener noreferrer">Secure password log in on insecure devices</a>
+            <div class="meta">US11770412B2 · granted</div>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US11553159B1/en" target="_blank"
+              rel="noopener noreferrer">Continuous video generation from voice data</a>
+            <div class="meta">US11553159B1 · granted</div>
+          </li>
+          <li>
+            <a class="title" href="https://patents.google.com/patent/US12182285B2/en" target="_blank"
+              rel="noopener noreferrer">System and method for encrypted storage of constructed data</a>
+            <div class="meta">US12182285B2 · granted</div>
+          </li>
+        </ul>
+      </section>
 
+      <section>
+        <h2>Documents</h2>
+        <div class="inline-links">
+          <a href="seth_rothschild_resume.pdf">Resume (PDF, Nov 2026)</a>
+          <a href="seth_rothschild_thesis.pdf">Thesis (PDF, Apr 2017)</a>
+          <a href="https://dl.tufts.edu/concern/pdfs/bk128p04h" target="_blank" rel="noopener noreferrer">Thesis at the
+            Tufts Digital Library</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
 
-
-
-			
-			<script>
-				{
-					__sveltekit_1hjyeta = {
-						base: new URL(".", location).pathname.slice(0, -1),
-						env: {}
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("./_app/immutable/entry/start.c908d800.js"),
-						import("./_app/immutable/entry/app.398b6ae3.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 2],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-  </body>
 </html>
